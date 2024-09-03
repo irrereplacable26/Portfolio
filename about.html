@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /* background: #282828; */
+            /* margin: 0 15px; */
+            padding: 10px 20px;
+            border-radius: 7px;
+            /* background-image: linear-gradient(to right, #4facfe,200%,20,#00f2fe,20, 100%); */
+        }
+
+            .container .skill-box {
+            width: 100%;
+            margin: 25px 0;
+            }
+
+            .skill-box .title {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            text-align: left;
+            }
+
+            .skill-box .skill-bar {
+            height: 8px;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 6px;
+            background: rgba(246, 246, 246, 0.311);
+            }
+
+            .skill-bar .skill-per {
+            position: relative;
+            display: block;
+            height: 100%;
+            width: 90%;
+            border-radius: 6px;
+            background: #fff;
+            animation: progress 0.4s ease-in-out forwards;
+            opacity: 0;
+            }
+
+            .skill-per.html {
+            /*progreso de las diferentes lenguajes*/
+            width: 70%;
+            animation-delay: 0.1s;
+            }
+
+            .skill-per.scss {
+            /*progreso de las diferentes lenguajes*/
+            width: 80%;
+            animation-delay: 0.1s;
+            }
+
+            .skill-per.Boostrap {
+            /*progreso de las diferentes lenguajes*/
+            width: 50%;
+            animation-delay: 0.2s;
+            }
+            .skill-per.Express{
+                width: 50%;
+                animation-delay: 0.2s;
+            }
+            .skill-per.Java{
+                width: 80%;
+                animation-delay: 0.2s;
+            }
+
+            @keyframes progress {
+            0% {
+                width: 0;
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+            }
+
+            .skill-per .tooltip {
+            position: absolute;
+            right: -14px;
+            top: -28px;
+            font-size: 9px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: rgb(226, 226, 226);
+            z-index: 1;
+            }
+
+            .tooltip::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            height: 10px;
+            width: 10px;
+            z-index: -1;
+            background-color: rgb(226, 226, 226);
+            transform: translateX(-50%) rotate(45deg);
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>Vaibhav <span>D.</span></h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certification.html">Certification</a></li>
+                <li><a href="contact.html" class="contact-btn">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="about-me">
+        <section class="about-container">
+            <!-- Beneo Grid Layout -->
+            <div class="grid-container">
+                <div class="grid-box" id="grid1">
+                    <h1>Vaibhav Dingalwar</h1>
+                    <p>I am Third Year EnTC Student. I am a passionate Web Developer. I aim at using my skill set to build solution for real world problems</p>
+                </div>
+                <div class="grid-box" id="grid2">
+                    <h1>Contact Details</h1>
+                    <div>
+                        <p><span>Email:</span> <a href="mailto:vaibhavdingalwar7@gmail.com">vaibhavdingalwar7@gmail.com</a></p>
+                        <p><span>Phn No:</span> 7739226540</p>
+                    </div>
+                </div>
+                <div class="grid-box" id="grid3"><img src="assets/my Photo.jpg" alt=""></div>
+                <div class="grid-box" id="grid4"></div>
+                <div class="grid-box" id="grid5"><img src="assets/quote.png" alt=""></div>
+                <div class="grid-box" id="grid6"><a href="https://www.linkedin.com/in/vaibhav-dingalwar-86588a276/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="grid-box" id="grid7"><a href="https://github.com/irrereplacable26" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="grid-box" id="grid8"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="grid-box" id="grid9"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="grid-box" id="grid10">
+                    <h3>Projects</h3>
+                    <div class="project-grid">
+                        <span><img src="assets/aimhire.png" alt=""></span>
+                        <span><img src="assets/saarthi_homepage.jpg" alt=""></span>
+                        <span><img src="assets/apexion.png" alt=""></span>
+                        <span><img src="assets/movie_hub.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="grid-box" id="grid11">
+                    <h3>Education</h3>
+                    <div>
+                        <p><span>College: </span> MITAOE, Pune</p>
+                        <p><span>CGPA: </span>7.4 </p>
+                        <p><span>PRN: </span> 202201070017</p>
+                    </div>
+                </div>
+                <div class="grid-box" id="grid12">
+                    
+                    <div class="container">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+
+                            <div class="skill-bar">
+                            <span class="skill-per html">
+                                <span class="tooltip">70%</span>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+
+                            <div class="skill-bar">
+                            <span class="skill-per scss">
+                                <span class="tooltip">80%</span>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+
+                            <div class="skill-bar">
+                            <span class="skill-per Boostrap">
+                                <span class="tooltip">50%</span>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-box">
+                            <span class="title">ExpressJs</span>
+
+                            <div class="skill-bar">
+                            <span class="skill-per Express">
+                                <span class="tooltip">50%</span>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-box">
+                            <span class="title">Java</span>
+
+                            <div class="skill-bar">
+                            <span class="skill-per Java">
+                                <span class="tooltip">80%</span>
+                            </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+              
+        </section>
+    </main>    
+
+    <script>
+        const certificates = ['aws_cloud_architect.png', 'Essentials_of_python1.png', 'codesprint_codechef.png', 'ds_vs_ml_vs_ai_scalar.png', 'essentials_of_javascript1.png', 'aws_cloud_foundation.png',  'journey_to_cloud_ibm.png', 'Tableau_masterclass_certificate.png', 'TechSprint_gdsc.png'];
+
+        const imageContainer = document.getElementById('grid4');
+
+        let currentIndex = 0;
+
+        function showNextImage(){
+            const src = certificates[currentIndex];
+            imageContainer.innerHTML = `<img src="my certificates/${src}" alt="">`;
+            if(currentIndex+1 == certificates.length){
+                currentIndex = 0;
+            }else{
+                currentIndex++;
+            }
+        }
+
+        // Set interval for every 2 seconds (2000ms)
+        setInterval(showNextImage, 2000);
+
+    </script>
+</body>
+</html>
